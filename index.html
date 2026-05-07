@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SME Sustainability Framework</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="header-inner">
+        <div class="header-left">
+            <div class="logo-mark"></div>
+            <span class="header-title">SME Sustainability Framework</span>
+        </div>
+    </div>
+</header>
+
+<!-- Status Card -->
+<div class="status-section">
+    <div class="status-card">
+        <div class="status-card-header">
+            <span class="status-label">Status</span>
+            <span class="status-dot"></span>
+        </div>
+        <div class="status-numbers">
+            <span class="status-completed" id="statusCompleted">0</span>
+            <span class="status-total">/<span id="statusTotal">33</span></span>
+        </div>
+        <div class="status-bar" id="statusBar">
+            <div class="status-bar-completed" id="barCompleted" style="width: 0%"></div>
+            <div class="status-bar-skipped" id="barSkipped" style="width: 0%"></div>
+            <div class="status-bar-remaining" id="barRemaining" style="width: 100%"></div>
+        </div>
+        <div class="status-legend">
+            <div class="legend-item">
+                <span class="legend-dot legend-dot-completed"></span>
+                <span><strong id="legendCompleted">0</strong> Completed</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-dot-skipped"></span>
+                <span><strong id="legendSkipped">0</strong> Skipped</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot legend-dot-remaining"></span>
+                <span><strong id="legendRemaining">33</strong> Not started</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section Pills -->
+<div class="pills-container">
+    <div class="pills-track" id="pillsTrack"></div>
+</div>
+
+<!-- Sections Viewport -->
+<div class="sections-viewport">
+    <div class="sections-track" id="sectionsTrack"></div>
+</div>
+
+<!-- Floating Nav -->
+<button class="floating-nav-btn" id="floatingNavBtn">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</button>
+
+<div class="floating-nav-panel" id="floatingNavPanel">
+    <div class="nav-panel-header">
+        <span>Navigation</span>
+        <button class="nav-panel-close" id="navPanelClose">&times;</button>
+    </div>
+    <div class="nav-panel-content" id="navPanelContent"></div>
+</div>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
