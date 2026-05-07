@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SME Sustainability Scorecard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">SME Sustainability Framework</p>
+            <h1>Sustainability Scorecard</h1>
+            <p class="hero-subtitle">A comprehensive ESG questionnaire assessing SMEs across <strong>5 categories</strong> and <strong>33 indicators</strong> — covering carbon performance, resource use, environmental stewardship, social responsibility, and governance.</p>
+            <a href="#scorecard" class="hero-cta">Explore the Scorecard ↓</a>
+        </div>
+    </header>
+
+    <!-- OVERVIEW STATS -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">33</span>
+                <span class="stat-label">Indicators</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Pillars (E, S, G)</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">3yr</span>
+                <span class="stat-label">Data Window</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How are companies scored?</h2>
+            <p class="section-intro">Companies are assessed across <strong>33 indicators</strong> grouped into <strong>5 categories</strong>. The scorecard captures emissions tracking, energy and resource efficiency, environmental impact, workforce and social practices, and governance quality. Each category expands below to reveal its subsections.</p>
+            
+            <div class="category-overview">
+                <div class="category-pill" data-target="cat-1" style="--pill-color: #16a34a;">
+                    <span class="pill-number">1</span>
+                    Carbon & Climate
+                </div>
+                <div class="category-pill" data-target="cat-2" style="--pill-color: #ea580c;">
+                    <span class="pill-number">2</span>
+                    Energy & Resources
+                </div>
+                <div class="category-pill" data-target="cat-3" style="--pill-color: #0284c7;">
+                    <span class="pill-number">3</span>
+                    Environmental Stewardship
+                </div>
+                <div class="category-pill" data-target="cat-4" style="--pill-color: #9333ea;">
+                    <span class="pill-number">4</span>
+                    Social & Workforce
+                </div>
+                <div class="category-pill" data-target="cat-5" style="--pill-color: #334155;">
+                    <span class="pill-number">5</span>
+                    Governance & Transparency
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCORECARD ACCORDION -->
+    <section id="scorecard" class="scorecard-section">
+        <div class="container">
+
+            <!-- CATEGORY 1 -->
+            <div class="category-block" id="cat-1">
+                <button class="category-header" style="--cat-color: #16a34a;" aria-expanded="false">
+                    <div class="category-header-left">
+                        <span class="category-number">1</span>
+                        <div>
+                            <h3>Carbon & Climate Performance</h3>
+                            <p class="category-desc">Tracking, targeting, and reducing carbon emissions</p>
+                        </div>
+                    </div>
+                    <div class="category-header-right">
+                        <span class="indicator-count">5 indicators</span>
+                        <span class="chevron">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </div>
+                </button>
+                <div class="category-body">
+                    <div class="category-body-inner">
+                        <p class="category-body-intro">This category captures how well the company tracks, targets, and reduces its carbon emissions — both in ambition and in practice.</p>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-id">1.1</div>
+                            <div class="indicator-content">
+                                <h4>Carbon Emissions Tracking</h4>
+                                <p>Does the company systematically track its carbon emissions (Scope 1 & 2)?</p>
+                                <span class="source-tag">Q2.1, Q2.2</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">1.2</div>
+                            <div class="indicator-content">
+                                <h4>Emissions Tracking Maturity</h4>
+                                <p>How advanced and complete is the company's emissions tracking capability, and what challenges remain?</p>
+                                <span class="source-tag">Q2.3</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">1.3</div>
+                            <div class="indicator-content">
+                                <h4>Net-Zero Target</h4>
+                                <p>Does the company have a stated net-zero carbon emissions target with a clear timeline?</p>
+                                <span class="source-tag">Q4.6</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">1.4</div>
+                            <div class="indicator-content">
+                                <h4>Emissions Reduction Plan</h4>
+                                <p>Does the company have a concrete reduction plan for Scope 1 and/or Scope 2 emissions?</p>
+                                <span class="source-tag">Q4.7</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">1.5</div>
+                            <div class="indicator-content">
+                                <h4>Intensity-Based Reduction Target</h4>
+                                <p>Does the company have an emissions intensity target (e.g., tCO₂e per unit of revenue or output)?</p>
+                                <span class="source-tag">Q4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 2 -->
+            <div class="category-block" id="cat-2">
+                <button class="category-header" style="--cat-color: #ea580c;" aria-expanded="false">
+                    <div class="category-header-left">
+                        <span class="category-number">2</span>
+                        <div>
+                            <h3>Energy & Resource Use</h3>
+                            <p class="category-desc">Energy consumption, renewables, water, waste & circularity</p>
+                        </div>
+                    </div>
+                    <div class="category-header-right">
+                        <span class="indicator-count">7 indicators</span>
+                        <span class="chevron">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </div>
+                </button>
+                <div class="category-body">
+                    <div class="category-body-inner">
+                        <p class="category-body-intro">This category measures the company's energy consumption patterns, resource efficiency, waste management, and adoption of renewables.</p>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.1</div>
+                            <div class="indicator-content">
+                                <h4>Physical Footprint</h4>
+                                <p>Does the company own, lease, or operate physical land or facilities (e.g., factories, offices, warehouses, farms)?</p>
+                                <span class="source-tag">Q2.4, Q2.5, Q2.6</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.2</div>
+                            <div class="indicator-content">
+                                <h4>Machinery & Equipment Energy Use</h4>
+                                <p>What is the energy consumption for machinery/equipment by source over the last 3 years?</p>
+                                <span class="source-tag">Q2.7</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.3</div>
+                            <div class="indicator-content">
+                                <h4>Vehicle Fleet & Energy</h4>
+                                <p>Does the company operate its own vehicle fleet, and what is its energy consumption?</p>
+                                <span class="source-tag">Q2.8, Q2.9</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.4</div>
+                            <div class="indicator-content">
+                                <h4>Electricity Consumption</h4>
+                                <p>What is the total electricity consumption and cost trend over the last 3 years?</p>
+                                <span class="source-tag">Q2.10</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.5</div>
+                            <div class="indicator-content">
+                                <h4>Renewable Energy Adoption</h4>
+                                <p>Has the company generated, purchased, or sold renewable energy (including RECs)?</p>
+                                <span class="source-tag">Q2.11, Q2.12</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.6</div>
+                            <div class="indicator-content">
+                                <h4>Water Consumption</h4>
+                                <p>What is the company's water consumption trend (cubic meters) over the last 3 years?</p>
+                                <span class="source-tag">Q2.13</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">2.7</div>
+                            <div class="indicator-content">
+                                <h4>Waste Generation & Recycling</h4>
+                                <p>What is the company's waste generated vs. waste recycled, and what % of recycled input materials are used?</p>
+                                <span class="source-tag">Q2.14, Q2.15, Q2.16</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 3 -->
+            <div class="category-block" id="cat-3">
+                <button class="category-header" style="--cat-color: #0284c7;" aria-expanded="false">
+                    <div class="category-header-left">
+                        <span class="category-number">3</span>
+                        <div>
+                            <h3>Environmental Stewardship</h3>
+                            <p class="category-desc">Biodiversity, land impact & environmental assessments</p>
+                        </div>
+                    </div>
+                    <div class="category-header-right">
+                        <span class="indicator-count">2 indicators</span>
+                        <span class="chevron">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </div>
+                </button>
+                <div class="category-body">
+                    <div class="category-body-inner">
+                        <p class="category-body-intro">This category assesses the company's awareness and management of its impact on natural ecosystems and surrounding environments.</p>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">3.1</div>
+                            <div class="indicator-content">
+                                <h4>Biodiversity Exposure</h4>
+                                <p>Are any company sites located in or near areas of high biodiversity value (nature reserves, wetlands, forests, coastal zones, mangroves)?</p>
+                                <span class="source-tag">Q2.17</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">3.2</div>
+                            <div class="indicator-content">
+                                <h4>Environmental Impact Assessment</h4>
+                                <p>Has the company conducted an EIA or similar environmental review to evaluate how its operations affect the environment?</p>
+                                <span class="source-tag">Q2.18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 4 -->
+            <div class="category-block" id="cat-4">
+                <button class="category-header" style="--cat-color: #9333ea;" aria-expanded="false">
+                    <div class="category-header-left">
+                        <span class="category-number">4</span>
+                        <div>
+                            <h3>Social & Workforce Responsibility</h3>
+                            <p class="category-desc">Workforce strategy, equity, safety, wellbeing & community</p>
+                        </div>
+                    </div>
+                    <div class="category-header-right">
+                        <span class="indicator-count">10 indicators</span>
+                        <span class="chevron">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </div>
+                </button>
+                <div class="category-body">
+                    <div class="category-body-inner">
+                        <p class="category-body-intro">This category evaluates how the company manages its workforce, ensures fair treatment, invests in development, and safeguards health and wellbeing.</p>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.1</div>
+                            <div class="indicator-content">
+                                <h4>Workforce Strategy</h4>
+                                <p>Does the company have a formal HR strategy to attract, retain, and develop employees?</p>
+                                <span class="source-tag">Q3.1</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.2</div>
+                            <div class="indicator-content">
+                                <h4>Workforce Composition & Diversity</h4>
+                                <p>What is the employee breakdown by contract status, gender, and age group?</p>
+                                <span class="source-tag">Q3.2</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.3</div>
+                            <div class="indicator-content">
+                                <h4>Employee Retention</h4>
+                                <p>What is the employee turnover rate by gender over the last 3 years?</p>
+                                <span class="source-tag">Q3.3</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.4</div>
+                            <div class="indicator-content">
+                                <h4>Fair Compensation</h4>
+                                <p>What is the average annual salary per employee, and has the company reviewed gender pay gaps?</p>
+                                <span class="source-tag">Q3.4, Q3.5</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.5</div>
+                            <div class="indicator-content">
+                                <h4>Benefits & Entitlements</h4>
+                                <p>What leave entitlements and ownership-based benefits (e.g., ESOP, share options) does the company provide?</p>
+                                <span class="source-tag">Q3.6, Q3.7, Q3.12, Q3.14</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.6</div>
+                            <div class="indicator-content">
+                                <h4>Training & Development</h4>
+                                <p>What are the total training hours, costs, and number of employees trained?</p>
+                                <span class="source-tag">Q3.8</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.7</div>
+                            <div class="indicator-content">
+                                <h4>Health & Safety</h4>
+                                <p>Does the company have a formal H&S policy, and how many occupational health incidents occurred?</p>
+                                <span class="source-tag">Q3.9, Q3.10</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.8</div>
+                            <div class="indicator-content">
+                                <h4>Misconduct & Ethics</h4>
+                                <p>How many misconduct incidents occurred and what were the associated costs?</p>
+                                <span class="source-tag">Q3.11</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.9</div>
+                            <div class="indicator-content">
+                                <h4>Community & Volunteering</h4>
+                                <p>What is the company's employee volunteering footprint for social impact?</p>
+                                <span class="source-tag">Q3.13</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">4.10</div>
+                            <div class="indicator-content">
+                                <h4>Stakeholder Satisfaction</h4>
+                                <p>Has the company conducted employee or customer satisfaction surveys?</p>
+                                <span class="source-tag">Q3.15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY 5 -->
+            <div class="category-block" id="cat-5">
+                <button class="category-header" style="--cat-color: #334155;" aria-expanded="false">
+                    <div class="category-header-left">
+                        <span class="category-number">5</span>
+                        <div>
+                            <h3>Governance, Targets & Transparency</h3>
+                            <p class="category-desc">Board oversight, sustainability strategy, reporting & ethics</p>
+                        </div>
+                    </div>
+                    <div class="category-header-right">
+                        <span class="indicator-count">9 indicators</span>
+                        <span class="chevron">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </span>
+                    </div>
+                </button>
+                <div class="category-body">
+                    <div class="category-body-inner">
+                        <p class="category-body-intro">This category assesses the quality of corporate governance, sustainability strategy, disclosure practices, and ethical conduct.</p>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.1</div>
+                            <div class="indicator-content">
+                                <h4>Board Composition & Oversight</h4>
+                                <p>What is the board's composition, and have there been changes in the past 2 years?</p>
+                                <span class="source-tag">Q4.1, Q4.2, Q4.3</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.2</div>
+                            <div class="indicator-content">
+                                <h4>Sustainability Personnel</h4>
+                                <p>Does the company have dedicated sustainability staff?</p>
+                                <span class="source-tag">Q4.4</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.3</div>
+                            <div class="indicator-content">
+                                <h4>Sustainability Strategy</h4>
+                                <p>Does the company have a documented sustainability strategy?</p>
+                                <span class="source-tag">Q4.5</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.4</div>
+                            <div class="indicator-content">
+                                <h4>Sustainability Training & Certifications</h4>
+                                <p>What sustainability-related training and certifications has the company or its sustainability team obtained?</p>
+                                <span class="source-tag">Q4.10</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.5</div>
+                            <div class="indicator-content">
+                                <h4>Sustainability Reporting & Disclosure</h4>
+                                <p>Does the company publish a sustainability report or climate risk disclosure?</p>
+                                <span class="source-tag">Q4.11, Q4.12</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.6</div>
+                            <div class="indicator-content">
+                                <h4>ESG Rating</h4>
+                                <p>Does the company currently have or seek an ESG rating?</p>
+                                <span class="source-tag">Q4.13, Q4.14</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.7</div>
+                            <div class="indicator-content">
+                                <h4>Materiality Assessment</h4>
+                                <p>Has the company conducted a materiality assessment of its business activities on society and stakeholders?</p>
+                                <span class="source-tag">Q4.15</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.8</div>
+                            <div class="indicator-content">
+                                <h4>Ethical Conduct</h4>
+                                <p>What costs has the company incurred from unethical behaviour incidents?</p>
+                                <span class="source-tag">Q4.16</span>
+                            </div>
+                        </div>
+
+                        <div class="indicator-card">
+                            <div class="indicator-id">5.9</div>
+                            <div class="indicator-content">
+                                <h4>Cybersecurity & Data Privacy</h4>
+                                <p>What costs has the company incurred from cyber attacks and privacy breaches?</p>
+                                <span class="source-tag">Q4.17</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- METHODOLOGY NOTE -->
+    <section class="methodology-note">
+        <div class="container">
+            <h2>Methodology Notes</h2>
+            <div class="note-grid">
+                <div class="note-card">
+                    <div class="note-icon">📊</div>
+                    <h4>Data Window</h4>
+                    <p>Most indicators request data over a <strong>3-year period</strong>, enabling trend analysis and direction-of-travel assessment rather than point-in-time snapshots.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-icon">🔀</div>
+                    <h4>Cross-Pillar Indicators</h4>
+                    <p>Some governance questions (Q4.6, Q4.7, Q4.9) are mapped to <strong>Carbon & Climate Performance</strong> for thematic coherence — targets belong with the emissions they address.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-icon">📝</div>
+                    <h4>Self-Reported Data</h4>
+                    <p>The scorecard is based on <strong>company-reported data</strong>. Transparency and completeness of disclosure are themselves indicators of maturity.</p>
+                </div>
+                <div class="note-card">
+                    <div class="note-icon">🏢</div>
+                    <h4>SME Focus</h4>
+                    <p>Indicators are calibrated for <strong>small and medium enterprises</strong>, recognising that SMEs face different constraints and operate at different scales than multinationals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>SME Sustainability Scorecard — Built for transparent ESG assessment</p>
+            <p class="footer-sub">Framework inspired by <a href="https://steelwatch.org/scorecard/" target="_blank">SteelWatch Corporate Scorecard</a> methodology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
