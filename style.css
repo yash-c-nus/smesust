@@ -1,0 +1,585 @@
+/* ===== RESET & BASE ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f7f8fa;
+    color: #1a1a2e;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 32px;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 36px;
+    height: 36px;
+    background: #16a34a;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* ===== STATUS CARD ===== */
+.status-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 10px 20px;
+    min-width: 280px;
+}
+
+.status-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.status-number {
+    margin-bottom: 8px;
+}
+
+.status-completed {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.status-total {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9ca3af;
+}
+
+.status-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #f3f4f6;
+    gap: 2px;
+    margin-bottom: 6px;
+}
+
+.status-segment {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.segment-completed { background: #16a34a; }
+.segment-skipped { background: #f59e0b; }
+.segment-notstarted { background: #e5e7eb; }
+
+.status-legend {
+    display: flex;
+    gap: 12px;
+}
+
+.legend-item {
+    font-size: 10px;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.dot-completed { background: #16a34a; }
+.dot-skipped { background: #f59e0b; }
+.dot-notstarted { background: #e5e7eb; }
+
+/* ===== SECTION PILLS ===== */
+.section-pills {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 100px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.pill:hover {
+    border-color: #d1d5db;
+    background: #f9fafb;
+}
+
+.pill.active {
+    background: #f0fdf4;
+    border-color: #16a34a;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+.pill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.pill-count {
+    font-size: 10px;
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 100px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.pill.active .pill-count {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* ===== SLIDES ===== */
+.slides-viewport {
+    margin-top: 130px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 500%;
+}
+
+.slide {
+    width: 100%;
+    min-height: calc(100vh - 130px);
+    flex-shrink: 0;
+    padding: 32px 40px 80px;
+    max-width: 100vw;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 28px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.section-accent {
+    width: 5px;
+    flex-shrink: 0;
+}
+
+.section-info {
+    padding: 20px 24px;
+}
+
+.section-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9ca3af;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.section-desc {
+    font-size: 13px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* ===== INDICATOR CARDS ===== */
+.indicators-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.indicator-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    transition: all 0.3s ease;
+}
+
+.indicator-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.indicator-card.skipped {
+    opacity: 0.4;
+    border-style: dashed;
+    border-color: #d1d5db;
+}
+
+.indicator-card.skipped .indicator-title {
+    text-decoration: line-through;
+}
+
+.indicator-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    flex: 1;
+}
+
+.indicator-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.indicator-content {
+    flex: 1;
+}
+
+.indicator-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 3px;
+    transition: all 0.3s ease;
+}
+
+.indicator-desc {
+    font-size: 12px;
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.indicator-tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-size: 10px;
+    font-weight: 600;
+    background: #f3f4f6;
+    color: #9ca3af;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* ===== TOGGLE SWITCH ===== */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d1d5db;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+}
+
+.toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    top: 3px;
+    left: 3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.toggle input:checked + .toggle-slider {
+    background: #16a34a;
+}
+
+.toggle input:checked + .toggle-slider::before {
+    transform: translateX(20px);
+}
+
+/* ===== SLIDE NAVIGATION ===== */
+.slide-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.nav-btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.nav-next {
+    background: #1a1a2e;
+    color: #fff;
+}
+
+.nav-next:hover {
+    background: #2d2d4e;
+}
+
+.nav-back {
+    background: #fff;
+    color: #6b7280;
+    border: 1px solid #e5e7eb;
+}
+
+.nav-back:hover {
+    background: #f9fafb;
+    color: #1a1a2e;
+}
+
+/* ===== FLOATING NAV ===== */
+.float-nav-btn {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    z-index: 200;
+    transition: all 0.2s ease;
+}
+
+.float-nav-btn:hover {
+    background: #2d2d4e;
+    transform: scale(1.05);
+}
+
+.float-nav-panel {
+    position: fixed;
+    bottom: 80px;
+    left: 24px;
+    width: 280px;
+    max-height: 60vh;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    z-index: 200;
+    overflow-y: auto;
+    display: none;
+    padding: 16px;
+}
+
+.float-nav-panel.open {
+    display: block;
+}
+
+.float-nav-header {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.float-nav-section {
+    margin-bottom: 12px;
+}
+
+.float-nav-section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a2e;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.float-nav-section-title:hover {
+    background: #f3f4f6;
+}
+
+.float-nav-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.float-nav-sub {
+    font-size: 12px;
+    color: #6b7280;
+    padding: 4px 8px 4px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.float-nav-sub:hover {
+    background: #f3f4f6;
+    color: #1a1a2e;
+}
+
+.float-nav-sub.skipped {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 16px;
+        flex-direction: column;
+        height: auto;
+        gap: 8px;
+    }
+
+    .status-card {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .section-pills {
+        top: auto;
+        position: relative;
+        margin-top: 0;
+        padding: 10px 12px;
+        gap: 6px;
+    }
+
+    .slides-viewport {
+        margin-top: 0;
+    }
+
+    .slide {
+        padding: 20px 16px 80px;
+    }
+
+    .pill {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .indicator-card {
+        padding: 12px 14px;
+    }
+
+    .indicator-desc {
+        font-size: 11px;
+    }
+
+    .float-nav-panel {
+        width: calc(100vw - 48px);
+        left: 24px;
+    }
+}
